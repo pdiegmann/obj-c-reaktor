@@ -4,17 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ios-reaktor.xcscheme</key>
+		<key>ios-reaktor-device.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>mac-reaktor.xcscheme</key>
+		<key>ios-reaktor-simulator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>reaktor.xcscheme</key>
+		<key>ios-reaktor.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>mac-reaktor.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>reaktorTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -22,6 +32,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4A0FDF2B16559B2900AB1B74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A0FDF3316559B6D00AB1B74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A0FDF4116559B6D00AB1B74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4AEC71AC165540A30062CA73</key>
 		<dict>
 			<key>primary</key>
