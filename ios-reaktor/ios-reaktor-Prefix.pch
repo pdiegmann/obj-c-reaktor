@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ios-reaktor' target in the 'ios-reaktor' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
