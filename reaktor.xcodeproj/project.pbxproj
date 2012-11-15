@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1262A0165545BE002D060E /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12629F165545BE002D060E /* SMWebRequest.m */; };
+		4A1262A1165545D6002D060E /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12629F165545BE002D060E /* SMWebRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4AEC71C0165540A30062CA73 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEC71BF165540A30062CA73 /* SenTestingKit.framework */; };
 		4AEC71C2165540A30062CA73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEC71C1165540A30062CA73 /* UIKit.framework */; };
 		4AEC71C3165540A30062CA73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEC71B0165540A30062CA73 /* Foundation.framework */; };
@@ -61,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A12629E165545B9002D060E /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMWebRequest.h; path = SMWebRequest/SMWebRequest.h; sourceTree = "<group>"; };
+		4A12629F165545BE002D060E /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMWebRequest.m; path = SMWebRequest/SMWebRequest.m; sourceTree = "<group>"; };
 		4AEC71B0165540A30062CA73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4AEC71B4165540A30062CA73 /* reaktor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "reaktor-Prefix.pch"; sourceTree = "<group>"; };
 		4AEC71B5165540A30062CA73 /* reaktor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reaktor.h; sourceTree = "<group>"; };
@@ -147,6 +151,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A12629C165545A2002D060E /* SMWebRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4A12629F165545BE002D060E /* SMWebRequest.m */,
+				4A12629E165545B9002D060E /* SMWebRequest.h */,
+			);
+			name = SMWebRequest;
+			sourceTree = "<group>";
+		};
 		4AEC71A2165540A30062CA73 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +201,7 @@
 		4AEC71B2165540A30062CA73 /* reaktor */ = {
 			isa = PBXGroup;
 			children = (
+				4A12629C165545A2002D060E /* SMWebRequest */,
 				4AEC71B5165540A30062CA73 /* reaktor.h */,
 				4AEC71B7165540A30062CA73 /* reaktor.m */,
 				4AEC71B3165540A30062CA73 /* Supporting Files */,
@@ -514,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AEC71CF165540A30062CA73 /* reaktorTests.m in Sources */,
+				4A1262A0165545BE002D060E /* SMWebRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1262A1165545D6002D060E /* SMWebRequest.m in Sources */,
 				4AEC7224165540C90062CA73 /* mac_reaktorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -816,6 +832,7 @@
 				4AEC71D7165540A30062CA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AEC71FA165540B90062CA73 /* Build configuration list for PBXNativeTarget "ios-reaktor" */ = {
 			isa = XCConfigurationList;
@@ -824,6 +841,7 @@
 				4AEC71FC165540B90062CA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AEC71FD165540B90062CA73 /* Build configuration list for PBXNativeTarget "ios-reaktorTests" */ = {
 			isa = XCConfigurationList;
@@ -832,6 +850,7 @@
 				4AEC71FF165540B90062CA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AEC7225165540C90062CA73 /* Build configuration list for PBXNativeTarget "mac-reaktor" */ = {
 			isa = XCConfigurationList;
@@ -840,6 +859,7 @@
 				4AEC7227165540C90062CA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AEC7228165540C90062CA73 /* Build configuration list for PBXNativeTarget "mac-reaktorTests" */ = {
 			isa = XCConfigurationList;
@@ -848,6 +868,7 @@
 				4AEC722A165540C90062CA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
