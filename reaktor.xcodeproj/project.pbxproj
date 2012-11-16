@@ -34,6 +34,7 @@
 		4A48A1241655655C0076CB19 /* reaktor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC71B7165540A30062CA73 /* reaktor.m */; };
 		4A5331F91656294700A15FCD /* reaktor.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4AEC71B5165540A30062CA73 /* reaktor.h */; };
 		4A53320916562D7B00A15FCD /* reaktorRequest.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4A48A11A165565480076CB19 /* reaktorRequest.h */; };
+		4AC1778B1656424900730931 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AC1778A1656424900730931 /* README.md */; };
 		4AEC71C0165540A30062CA73 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEC71BF165540A30062CA73 /* SenTestingKit.framework */; };
 		4AEC71C2165540A30062CA73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEC71C1165540A30062CA73 /* UIKit.framework */; };
 		4AEC71C3165540A30062CA73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEC71B0165540A30062CA73 /* Foundation.framework */; };
@@ -94,6 +95,7 @@
 		4A0FDF5016559B6D00AB1B74 /* ios_reaktor_simulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_reaktor_simulatorTests.m; sourceTree = "<group>"; };
 		4A48A11A165565480076CB19 /* reaktorRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reaktorRequest.h; sourceTree = "<group>"; };
 		4A48A11B165565480076CB19 /* reaktorRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reaktorRequest.m; sourceTree = "<group>"; };
+		4AC1778A1656424900730931 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		4AEC71B0165540A30062CA73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4AEC71B4165540A30062CA73 /* reaktor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "reaktor-Prefix.pch"; sourceTree = "<group>"; };
 		4AEC71B5165540A30062CA73 /* reaktor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reaktor.h; sourceTree = "<group>"; };
@@ -107,7 +109,7 @@
 		4AEC71CE165540A30062CA73 /* reaktorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reaktorTests.m; sourceTree = "<group>"; };
 		4AEC71DC165540B80062CA73 /* libios-reaktor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-reaktor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC71E0165540B80062CA73 /* ios-reaktor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-reaktor-Prefix.pch"; sourceTree = "<group>"; };
-		4AEC71EA165540B80062CA73 /* ios-reaktorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ios-reaktorTests.octest"; path = "ios-reaktor-deviceTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEC71EA165540B80062CA73 /* ios-reaktorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-reaktorTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC71F3165540B90062CA73 /* ios-reaktorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-reaktorTests-Info.plist"; sourceTree = "<group>"; };
 		4AEC71F5165540B90062CA73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AEC71F7165540B90062CA73 /* ios_reaktorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_reaktorTests.h; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 		4AEC71A2165540A30062CA73 = {
 			isa = PBXGroup;
 			children = (
+				4AC1778A1656424900730931 /* README.md */,
 				4A48A125165565670076CB19 /* tests */,
 				4AEC71B2165540A30062CA73 /* reaktor */,
 				4AEC71DE165540B80062CA73 /* ios-reaktor */,
@@ -509,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AEC71CC165540A30062CA73 /* InfoPlist.strings in Resources */,
+				4AC1778B1656424900730931 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
