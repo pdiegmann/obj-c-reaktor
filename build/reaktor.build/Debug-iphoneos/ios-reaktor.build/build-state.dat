@@ -1,0 +1,205 @@
+Tios-reaktor
+v5
+r1
+cCheck dependencies
+cProcessPCH /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch.pth ios-reaktor/ios-reaktor-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch.pth ios-reaktor/ios-reaktor-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktorRequest-7A161BE403B7A242.o /Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktor-442A7A2C25DD8A55.o /Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktorRequest-7A161BE403B7A242.o /Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktor-442A7A2C25DD8A55.o /Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/libios-reaktor.a normal armv7s
+cLibtool /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/libios-reaktor.a normal armv7
+cCreateUniversalBinary /Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/libios-reaktor.a normal "i386 armv7s armv7"
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk
+c00000000509388670000000000000132
+t1351845991
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000505B1FB10000000000629C80
+t1348149169
+s6462592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000505B1FB100000000000015F7
+t1348149169
+s5623
+
+N/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/ios-reaktor.LinkFileList
+c0000000050A602D2000000000000010F
+t1353056978
+s271
+
+N/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/libios-reaktor.a
+t2
+s0
+
+N/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktor-442A7A2C25DD8A55.o
+t2
+s0
+
+N/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktorRequest-7A161BE403B7A242.o
+t2
+s0
+
+N/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/ios-reaktor.LinkFileList
+c0000000050A602D20000000000000111
+t1353056978
+s273
+
+N/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/libios-reaktor.a
+t2
+s0
+
+N/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktor-442A7A2C25DD8A55.o
+t2
+s0
+
+N/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktorRequest-7A161BE403B7A242.o
+t2
+s0
+
+N/Users/phil/Code/obj-c-reaktor/ios-reaktor/ios-reaktor-Prefix.pch
+c0000000050A5093800000000000000A3
+t1352993080
+s163
+i<Foundation/Foundation.h>
+
+N/Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m
+c0000000050A52C880000000000000CE1
+t1353002120
+s3297
+
+N/Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m
+c0000000050A52C5C00000000000006A8
+t1353002076
+s1704
+
+N/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/libios-reaktor.a
+t2
+s0
+
+N/var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch.pth
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesdd2218523a56b641^21731d523a56b641^-944"warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktorRequest.h' of type sourcecode.c.h for architecture i386warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktorRequest.m' of type sourcecode.c.objc for architecture i386warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktor.h' of type sourcecode.c.h for architecture i386warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktor.m' of type sourcecode.c.objc for architecture i386warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktorRequest.h' of type sourcecode.c.h for architecture armv7swarning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktor.h' of type sourcecode.c.h for architecture armv7swarning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktorRequest.h' of type sourcecode.c.h for architecture armv7warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktor.h' of type sourcecode.c.h for architecture armv78(21%IDEActivityLogMessage2@119"Warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktorRequest.h' of type sourcecode.c.h for architecture i386-374749778#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@122"Warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktorRequest.m' of type sourcecode.c.objc for architecture i386-374749778#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@112"Warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktor.h' of type sourcecode.c.h for architecture i386-374749778#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@115"Warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktor.m' of type sourcecode.c.objc for architecture i386-374749778#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@121"Warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktorRequest.h' of type sourcecode.c.h for architecture armv7s-374749778#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@114"Warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktor.h' of type sourcecode.c.h for architecture armv7s-374749778#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@120"Warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktorRequest.h' of type sourcecode.c.h for architecture armv7-374749778#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@113"Warning: no rule to process file '$(PROJECT_DIR)/reaktor/reaktor.h' of type sourcecode.c.h for architecture armv7-374749778#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#0#--18"Check dependencies36"FB4065FD-87F0-4417-8D4E-8A6C48FB9082-
+
+CCompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktor-442A7A2C25DD8A55.o /Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374749778.286676
+e374749778.323536
+r1
+xCompileC
+xbuild/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktor-442A7A2C25DD8A55.o
+x/Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m7ac349523a56b641^74d352523a56b641^---0#0#0#-19%DVTDocumentLocation2@64"file://localhost/Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m0000000000000000^3290"CompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktor-442A7A2C25DD8A55.o reaktor/reaktor.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/phil/Code/obj-c-reaktor    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-generated-files.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-own-target-headers.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-all-target-headers.hmap -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-project-headers.hmap -I/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources/armv7 -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources -F/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos -include /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch -MMD -MT dependencies -MF /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktor-442A7A2C25DD8A55.d --serialize-diagnostics /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktor-442A7A2C25DD8A55.dia -c /Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m -o /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktor-442A7A2C25DD8A55.o36"A82DE42A-A2A2-4B93-B015-8445DD8F2BF6-
+
+CCompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktorRequest-7A161BE403B7A242.o /Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374749778.285508
+e374749778.322868
+r1
+xCompileC
+xbuild/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktorRequest-7A161BE403B7A242.o
+x/Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.md78749523a56b641^8ba752523a56b641^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m0000000000000000^3332"CompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktorRequest-7A161BE403B7A242.o reaktor/reaktorRequest.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/phil/Code/obj-c-reaktor    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-generated-files.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-own-target-headers.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-all-target-headers.hmap -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-project-headers.hmap -I/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources/armv7 -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources -F/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos -include /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch -MMD -MT dependencies -MF /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktorRequest-7A161BE403B7A242.d --serialize-diagnostics /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktorRequest-7A161BE403B7A242.dia -c /Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m -o /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/reaktorRequest-7A161BE403B7A242.o36"59403C98-F9EC-4EC0-8436-BDDAE895E271-
+
+CCompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktor-442A7A2C25DD8A55.o /Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374749778.279388
+e374749778.318427
+r1
+xCompileC
+xbuild/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktor-442A7A2C25DD8A55.o
+x/Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m9dd447523a56b641^f58451523a56b641^---0#0#0#-19%DVTDocumentLocation2@64"file://localhost/Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m0000000000000000^3297"CompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktor-442A7A2C25DD8A55.o reaktor/reaktor.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/phil/Code/obj-c-reaktor    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-generated-files.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-own-target-headers.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-all-target-headers.hmap -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-project-headers.hmap -I/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources/armv7s -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources -F/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos -include /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch -MMD -MT dependencies -MF /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktor-442A7A2C25DD8A55.d --serialize-diagnostics /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktor-442A7A2C25DD8A55.dia -c /Users/phil/Code/obj-c-reaktor/reaktor/reaktor.m -o /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktor-442A7A2C25DD8A55.o36"03FB9FC5-7F0C-4E0C-9F3A-C6A8DA78A576-
+
+CCompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktorRequest-7A161BE403B7A242.o /Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374749778.279382
+e374749778.314205
+r1
+xCompileC
+xbuild/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktorRequest-7A161BE403B7A242.o
+x/Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m73d647523a56b641^f37250523a56b641^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m0000000000000000^3339"CompileC build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktorRequest-7A161BE403B7A242.o reaktor/reaktorRequest.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/phil/Code/obj-c-reaktor    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-generated-files.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-own-target-headers.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-all-target-headers.hmap -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-project-headers.hmap -I/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources/armv7s -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources -F/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos -include /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch -MMD -MT dependencies -MF /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktorRequest-7A161BE403B7A242.d --serialize-diagnostics /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktorRequest-7A161BE403B7A242.dia -c /Users/phil/Code/obj-c-reaktor/reaktor/reaktorRequest.m -o /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/reaktorRequest-7A161BE403B7A242.o36"660B2669-707A-4870-9258-EAC597267E37-
+
+CCreateUniversalBinary /Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/libios-reaktor.a normal "i386 armv7s armv7"
+s374749778.344416
+e374749778.353377
+r1
+xCreateUniversalBinary
+x/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/libios-reaktor.a
+xnormal
+xi386 armv7s armv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection155"Create universal binary /Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/libios-reaktor.a697358523a56b641^ea765a523a56b641^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/libios-reaktor.a000000000080d041^619"CreateUniversalBinary /Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/libios-reaktor.a normal "i386 armv7s armv7"    cd /Users/phil/Code/obj-c-reaktor    libtool -static /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/libios-reaktor.a /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/libios-reaktor.a -o /Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/libios-reaktor.a36"DA25B99F-D2DA-40F3-93BD-674C524D9A34-
+
+CLibtool /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/libios-reaktor.a normal armv7
+s374749778.329831
+e374749778.337610
+r1
+xLibtool
+x/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/libios-reaktor.a
+xnormal
+xarmv7
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Libtool build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/libios-reaktor.a normal armv771af54523a56b641^446e56523a56b641^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--840"Libtool build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/libios-reaktor.a normal armv7    cd /Users/phil/Code/obj-c-reaktor    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -L/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos -filelist /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/ios-reaktor.LinkFileList -ObjC -framework Foundation -o /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7/libios-reaktor.a36"C038F7BA-7049-4308-A8D1-D5CE72E1EF89-
+
+CLibtool /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/libios-reaktor.a normal armv7s
+s374749778.324630
+e374749778.332158
+r1
+xLibtool
+x/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/libios-reaktor.a
+xnormal
+xarmv7s
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Libtool build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/libios-reaktor.a normal armv7s9a5d53523a56b641^6c0955523a56b641^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--845"Libtool build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/libios-reaktor.a normal armv7s    cd /Users/phil/Code/obj-c-reaktor    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7s -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -L/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos -filelist /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/ios-reaktor.LinkFileList -ObjC -framework Foundation -o /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/Objects-normal/armv7s/libios-reaktor.a36"44023EAF-E2B5-4A5D-8184-1E3CE2039060-
+
+CProcessPCH /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch.pth ios-reaktor/ios-reaktor-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374749778.120143
+e374749778.279214
+r1
+xProcessPCH
+x/var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch.pth
+xios-reaktor/ios-reaktor-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile ios-reaktor/ios-reaktor-Prefix.pchfb201f523a56b641^927a47523a56b641^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/phil/Code/obj-c-reaktor/ios-reaktor/ios-reaktor-Prefix.pch0000000000000000^3334"ProcessPCH /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch.pth ios-reaktor/ios-reaktor-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/phil/Code/obj-c-reaktor    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-generated-files.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-own-target-headers.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-all-target-headers.hmap -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-project-headers.hmap -I/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources/armv7 -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources -F/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos --serialize-diagnostics /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch.dia -c /Users/phil/Code/obj-c-reaktor/ios-reaktor/ios-reaktor-Prefix.pch -o /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-flivryykblzefaajgktkkjgizuac/ios-reaktor-Prefix.pch.d36"B1854385-93A0-480F-8516-F6080566B60A-
+
+CProcessPCH /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch.pth ios-reaktor/ios-reaktor-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374749778.120140
+e374749778.273233
+r1
+xProcessPCH
+x/var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch.pth
+xios-reaktor/ios-reaktor-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile ios-reaktor/ios-reaktor-Prefix.pch18221f523a56b641^34f245523a56b641^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/phil/Code/obj-c-reaktor/ios-reaktor/ios-reaktor-Prefix.pch0000000000000000^3337"ProcessPCH /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch.pth ios-reaktor/ios-reaktor-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/phil/Code/obj-c-reaktor    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-generated-files.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-own-target-headers.hmap -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-all-target-headers.hmap -iquote /Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/ios-reaktor-project-headers.hmap -I/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources/armv7s -I/Users/phil/Code/obj-c-reaktor/build/reaktor.build/Debug-iphoneos/ios-reaktor.build/DerivedSources -F/Users/phil/Library/Developer/Xcode/DerivedData/reaktor-gbahxsbwutgjjjgvintohijozozs/Build/Products/Debug-iphoneos --serialize-diagnostics /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch.dia -c /Users/phil/Code/obj-c-reaktor/ios-reaktor/ios-reaktor-Prefix.pch -o /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/gd/stv2y35d0c9_9_ggcbl7zfxw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ios-reaktor-Prefix-goaruwbcmvajhjctudteafgjkaie/ios-reaktor-Prefix.pch.d36"C9BAD889-E3EA-4D14-A82F-9C7C19964D77-
+

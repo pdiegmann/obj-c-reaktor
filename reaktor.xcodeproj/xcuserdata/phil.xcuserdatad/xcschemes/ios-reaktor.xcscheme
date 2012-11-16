@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4A0FDF2B16559B2900AB1B74"
-               BuildableName = "ios-reaktor"
+               BlueprintIdentifier = "4AEC71DB165540B80062CA73"
+               BuildableName = "libios-reaktor.a"
                BlueprintName = "ios-reaktor"
                ReferencedContainer = "container:reaktor.xcodeproj">
             </BuildableReference>
@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4AEC71E9165540B80062CA73"
+               BuildableName = "ios-reaktorTests.octest"
+               BlueprintName = "ios-reaktorTests"
+               ReferencedContainer = "container:reaktor.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
