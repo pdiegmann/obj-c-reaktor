@@ -18,6 +18,17 @@
 			name = "ios-reaktor";
 			productName = "ios-reaktor-simdev";
 		};
+		4A5331D9165622E100A15FCD /* reaktor */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4A5331DC165622E100A15FCD /* Build configuration list for PBXAggregateTarget "reaktor" */;
+			buildPhases = (
+				4A5331DE165622E700A15FCD /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = reaktor;
+			productName = reaktor;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -135,7 +146,7 @@
 		4AEC71CE165540A30062CA73 /* reaktorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reaktorTests.m; sourceTree = "<group>"; };
 		4AEC71DC165540B80062CA73 /* libios-reaktor-device.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-reaktor-device.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC71E0165540B80062CA73 /* ios-reaktor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-reaktor-Prefix.pch"; sourceTree = "<group>"; };
-		4AEC71EA165540B80062CA73 /* ios-reaktorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-reaktorTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEC71EA165540B80062CA73 /* ios-reaktorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ios-reaktorTests.octest"; path = "ios-reaktor-deviceTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC71F3165540B90062CA73 /* ios-reaktorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-reaktorTests-Info.plist"; sourceTree = "<group>"; };
 		4AEC71F5165540B90062CA73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AEC71F7165540B90062CA73 /* ios_reaktorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_reaktorTests.h; sourceTree = "<group>"; };
@@ -620,6 +631,7 @@
 				4AEC7203165540C90062CA73 /* mac-reaktor */,
 				4AEC7215165540C90062CA73 /* mac-reaktorTests */,
 				4A0FDF2B16559B2900AB1B74 /* ios-reaktor */,
+				4A5331D9165622E100A15FCD /* reaktor */,
 			);
 		};
 /* End PBXProject section */
@@ -685,6 +697,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "rm -rf ${BUILT_PRODUCTS_DIR}/libios-reaktor.a\n\nlipo -create \"${BUILT_PRODUCTS_DIR}/../${CONFIGURATION}-iphonesimulator/libios-reaktor-simulator.a\" \\\n\"${BUILT_PRODUCTS_DIR}/libios-reaktor-device.a\" -output \\\n\"${BUILT_PRODUCTS_DIR}/../libios-reaktor.a\"";
+		};
+		4A5331DE165622E700A15FCD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf ${BUILT_PRODUCTS_DIR}/lib-reaktor.a\n\nlipo -create \"${BUILT_PRODUCTS_DIR}/../${CONFIGURATION}/libmac-reaktor.a\" \\\n\"${BUILT_PRODUCTS_DIR}/../libios-reaktor.a\" -output \\\n\"${BUILT_PRODUCTS_DIR}/../lib-reaktor.a\"";
 		};
 		4AEC71BC165540A30062CA73 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -918,6 +943,20 @@
 			};
 			name = Release;
 		};
+		4A5331DA165622E100A15FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A5331DB165622E100A15FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		4AEC71D0165540A30062CA73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1135,6 +1174,7 @@
 				4A0FDF2D16559B2900AB1B74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A0FDF5216559B6D00AB1B74 /* Build configuration list for PBXNativeTarget "ios-reaktor-simulator" */ = {
 			isa = XCConfigurationList;
@@ -1143,12 +1183,22 @@
 				4A0FDF5416559B6D00AB1B74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A0FDF5516559B6D00AB1B74 /* Build configuration list for PBXNativeTarget "ios-reaktor-simulatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A0FDF5616559B6D00AB1B74 /* Debug */,
 				4A0FDF5716559B6D00AB1B74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A5331DC165622E100A15FCD /* Build configuration list for PBXAggregateTarget "reaktor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5331DA165622E100A15FCD /* Debug */,
+				4A5331DB165622E100A15FCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

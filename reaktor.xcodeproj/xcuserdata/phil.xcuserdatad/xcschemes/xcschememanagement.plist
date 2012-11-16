@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>reaktor.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>reaktorTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>4A0FDF4116559B6D00AB1B74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A5331D9165622E100A15FCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
