@@ -21,11 +21,14 @@
 @interface reaktor : NSObject {
     id _delegate;
     
+    BOOL isLoggedIn;
+    
     NSString *_mail;
     NSString *_password;
     
     NSString *_baseUrl;
     NSURLRequest *_connection;
+    NSOperationQueue *_queue;
 }
 
 @property (nonatomic, retain) id<reaktorDelegate> delegate;

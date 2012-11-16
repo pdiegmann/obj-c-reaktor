@@ -11,13 +11,14 @@
 typedef enum reaktorMethodType { rmtPOST, rmtGET, rmtPUT, rmtDELETE } reaktorMethodType;
 
 @interface reaktorRequest : NSObject<NSURLConnectionDataDelegate> {
-    NSMutableData *_data;
     id _delegate;
     SEL _method;
-    NSURLConnection *_connection;
+    
+    NSOperationQueue *_queue;
+    NSMutableURLRequest *_request;
 }
 
-- (id) initWithUrl:(NSString*)url andData:(NSString*)requestData andMethodType:(NSString*)methodType andDelegate:(id)delegate andMethod:(SEL)method;
+- (id) initWithUrl:(NSString*)url andData:(NSString*)requestData andMethodType:(NSString*)methodType andDelegate:(id)delegate andMethod:(SEL)method andQueue:(NSOperationQueue*)queue;
 - (void) start;
 
 @end

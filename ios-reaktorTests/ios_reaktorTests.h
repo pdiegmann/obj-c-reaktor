@@ -7,7 +7,10 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "reaktor.h"
 
-@interface ios_reaktorTests : SenTestCase
+@interface ios_reaktorTests : SenTestCase<reaktorDelegate> {
+    reaktor *r;
+}
 
 @end

@@ -16,9 +16,11 @@
     self = [super init];
     
     if (self) {
+        isLoggedIn = NO;
+        
         _delegate = delegate;
         
-        _baseUrl = @"";
+        _baseUrl = @"http://api.reaktor.io";
         _connection = nil;
         
         _mail = mail;
@@ -30,12 +32,18 @@
     return self;
 }
 
-- (BOOL) isLoggedIn {
-    return [_mail length] > 0 && [_password length] > 0 && _connection;
+- (NSOperationQueue*)getQueue {
+    if (!_queue)
+        _queue = [[NSOperationQueue alloc] init];
+    return _queue;
+}
+
+- (BOOL) canConnect {
+    return [_mail length] > 0 && [_password length] > 0; // && _connection
 }
 
 - (void) login {
-    if ([self isLoggedIn]) {
+    if ([_mail length] > 0 && [_password length] > 0) {
         [self loginWithMail:_mail andPassword:_password];
     }
     else {
@@ -47,8 +55,8 @@
 
 - (void) loginWithMail:(NSString*)mail andPassword:(NSString*)password {
     NSString *url = [NSString stringWithFormat:@"%@/login", _baseUrl];
-    NSString *data = [NSString stringWithFormat:@"mail=%@&pass=%@", mail, password];
-    reaktorRequest *request = [[reaktorRequest alloc] initWithUrl:url andData:data andMethodType:@"POST" andDelegate:self andMethod:@selector(loginRequestResult:)];
+    NSString *jsonData = [NSString stringWithFormat:@"{ \"mail\": \"%@\", \"pass\": \"%@\" }", mail, password];
+    reaktorRequest *request = [[reaktorRequest alloc] initWithUrl:url andData:jsonData andMethodType:@"POST" andDelegate:self andMethod:@selector(loginRequestResult:) andQueue:[self getQueue]];
     [request start];
 }
 
@@ -62,28 +70,30 @@
                           error:&error];
     
     if (!error) {
-        success = [[json objectForKey:@"ok"] isEqualToString:@"true"];
+        success = (BOOL)[json objectForKey:@"ok"];
     }
     
+    isLoggedIn = success;
+    
     if ([_delegate respondsToSelector:@selector(loggedIn:)]) {
-        [_delegate loggedIn:success]; //performSelector:@selector(loggedIn:) withObject:success];
+        [_delegate loggedIn:success];
     }
 }
 
 - (void) trigger:(NSString*)trigger {
-    if ([self isLoggedIn]) {
+    if ([self canConnect] && isLoggedIn) {
         [self trigger:trigger inSaveMode:NO];
     }
     else {
         if ([_delegate respondsToSelector:@selector(calledTrigger:)]) {
-            [_delegate calledTrigger:NO]; //performSelector:@selector(calledTrigger:) withObject:NO];
+            [_delegate calledTrigger:NO];
         }
     }
 }
 - (void) trigger:(NSString*)trigger inSaveMode:(BOOL)saveMode {
     NSString *url = [NSString stringWithFormat:@"%@/trigger", _baseUrl];
-    NSString *data = [NSString stringWithFormat:@"name=%@&save=%@", trigger, saveMode ? @"true" : @"false"];
-    reaktorRequest *request = [[reaktorRequest alloc] initWithUrl:url andData:data andMethodType:@"POST" andDelegate:self andMethod:@selector(triggerRequestResult:)];
+    NSString *data = [NSString stringWithFormat:@"{ \"name\": \"%@\", \"save\": \"%@\" }", trigger, saveMode ? @"true" : @"false"];
+    reaktorRequest *request = [[reaktorRequest alloc] initWithUrl:url andData:data andMethodType:@"POST" andDelegate:self andMethod:@selector(triggerRequestResult:) andQueue:[self getQueue]];
     [request start];
 }
 
@@ -97,11 +107,11 @@
                           error:&error];
     
     if (!error) {
-        success = [[json objectForKey:@"ok"] isEqualToString:@"true"];
+        success = (BOOL)[json objectForKey:@"ok"];
     }
     
     if ([_delegate respondsToSelector:@selector(calledTrigger:)]) {
-        [_delegate calledTrigger:success]; // delegate performSelector:@selector(calledTrigger:) withObject:success];
+        [_delegate calledTrigger:success];
     }
 }
 

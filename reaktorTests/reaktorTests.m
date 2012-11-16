@@ -26,7 +26,16 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in reaktorTests");
+    //STFail(@"Unit tests are not implemented yet in reaktorTests");
+    reaktor *r = [[reaktor alloc] initWithDelegate:self andMail:@"test@test.de" andPassword:@"test"];
+    [r trigger:@"Test"];
+}
+
+- (void) loggedIn:(BOOL)success {
+    NSLog(@"loggedIn: %i", success);
+}
+- (void) calledTrigger:(BOOL)success {
+    NSLog(@"calledTrigger: %i", success);
 }
 
 @end

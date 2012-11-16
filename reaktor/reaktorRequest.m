@@ -10,50 +10,41 @@
 
 @implementation reaktorRequest
 
-- (id) initWithUrl:(NSString*)url andData:(NSString*)requestData andMethodType:(NSString*)methodType andDelegate:(id)delegate andMethod:(SEL)method {
+- (id) initWithUrl:(NSString*)url andData:(NSString*)requestData andMethodType:(NSString*)methodType andDelegate:(id)delegate andMethod:(SEL)method andQueue:(NSOperationQueue*)queue {
 
     self = [super init];
     
     if (self) {
         _delegate = delegate;
         _method = method;
+        _queue = queue;
     
-        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLCacheStorageNotAllowed timeoutInterval:20.0f];
-        [request setHTTPMethod:methodType];
-        NSData *data = [NSData dataWithBytes: [requestData UTF8String] length: [requestData length]];
-        [request setHTTPBody:data];
-        
-        _connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-        //[_connection start];
+        _request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLCacheStorageNotAllowed timeoutInterval:20.0f];
+        [_request setHTTPMethod:methodType];
+        [_request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        [_request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        [_request setValue:[NSString stringWithFormat:@"%d", [requestData length]] forHTTPHeaderField:@"Content-Length"];
+        [_request setHTTPBody:[requestData dataUsingEncoding:NSUTF8StringEncoding]];
+
     }
     
     return self;
 }
 
 - (void) start {
-    if (_connection)
-        [_connection start];
-}
+    [NSURLConnection sendAsynchronousRequest:_request queue:_queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+     {
+         if ([data length] > 0 && error == nil) {
+             if ([_delegate respondsToSelector:_method]) {
+                #pragma clang diagnostic push
+                #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+                [_delegate performSelector:_method withObject:data];
+                #pragma clang diagnostic pop
+             }
+         }
+         
+     }];
 
--(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
-{
-    _data = [[NSMutableData alloc] init];
-}
--(void)connection:(NSURLConnection*)connection didReceiveData:(NSData*)data
-{
-    [_data appendData:data];
-}
--(void)connection:(NSURLConnection*)connection didFailWithError:(NSError*)error
-{
-}
--(void)connectionDidFinishLoading:(NSURLConnection*)connection
-{
-    if ([_delegate respondsToSelector:_method]) {
-        #pragma clang diagnostic push
-        #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [_delegate performSelector:_method withObject:_data];
-        #pragma clang diagnostic pop
-    }
 }
 
 @end

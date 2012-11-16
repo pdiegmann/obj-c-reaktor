@@ -26,7 +26,17 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in ios-reaktorTests");
+    r = [[reaktor alloc] initWithDelegate:self andMail:@"test@test.de" andPassword:@"test"];
+    [NSThread sleepForTimeInterval:20.0f];
+    NSLog(@"end");
+}
+
+- (void) loggedIn:(BOOL)success {
+    if (success)
+        [r trigger:@"Test"];
+}
+- (void) calledTrigger:(BOOL)success {
+    
 }
 
 @end
