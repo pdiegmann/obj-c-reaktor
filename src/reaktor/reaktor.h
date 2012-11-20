@@ -25,6 +25,7 @@
     
     NSString *_mail;
     NSString *_password;
+    NSString *_token;
     
     NSString *_baseUrl;
     NSURLRequest *_connection;

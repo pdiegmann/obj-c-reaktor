@@ -544,7 +544,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "mkdir -p \"${SRCROOT}/../bin/${CONFIGURATION}-universal/\"\nrm -R \"${SRCROOT}/${CONFIGURATION}-universal/\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-universal/\" \"${SRCROOT}/../bin/${CONFIGURATION}-universal/\"";
+			shellScript = "rm -Rf \"${SRCROOT}/../bin/${CONFIGURATION}-universal/\"\nmkdir -p \"${SRCROOT}/../bin/${CONFIGURATION}-universal/\"\ncp -R -Rfp \"${BUILD_DIR}/${CONFIGURATION}-universal/\" \"${SRCROOT}/../bin/${CONFIGURATION}-universal/\"";
 		};
 		4AE702AA165638360065C093 /* Build static Libraries */ = {
 			isa = PBXShellScriptBuildPhase;

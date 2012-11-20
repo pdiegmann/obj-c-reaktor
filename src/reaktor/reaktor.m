@@ -22,6 +22,7 @@
         
         _baseUrl = @"http://api.reaktor.io";
         _connection = nil;
+        _token = nil;
         
         _mail = mail;
         _password = password;
@@ -39,7 +40,7 @@
 }
 
 - (BOOL) canConnect {
-    return [_mail length] > 0 && [_password length] > 0; // && _connection
+    return [_mail length] > 0 && [_password length] > 0 && [_token length] > 0; // && _connection
 }
 
 - (void) login {
@@ -71,6 +72,7 @@
     
     if (!error) {
         success = (BOOL)[json objectForKey:@"ok"];
+        _token = (NSString*)[json objectForKey:@"token"];
     }
     
     isLoggedIn = success;
@@ -110,7 +112,7 @@
         [paramsJSON appendString:@"}"];
     }
     
-    NSString *data = [NSString stringWithFormat:@"{ \"name\": \"%@\", \"params\": \"%@\", \"save\": \"%@\" }", trigger, paramsJSON, saveMode ? @"true" : @"false"];
+    NSString *data = [NSString stringWithFormat:@"{ \"token\": \"%@\", \"name\": \"%@\", \"params\": \"%@\", \"save\": \"%@\" }", _token, trigger, paramsJSON, saveMode ? @"true" : @"false"];
     
     reaktorRequest *request = [[reaktorRequest alloc] initWithUrl:url andData:data andMethodType:@"POST" andDelegate:self andMethod:@selector(triggerRequestResult:) andQueue:[self getQueue]];
     [request start];
