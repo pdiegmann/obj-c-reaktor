@@ -33,7 +33,7 @@
 
 - (void) loggedIn:(BOOL)success {
     if (success)
-        [r trigger:@"Test"];
+        [r trigger:@"Test" withParams:[NSDictionary dictionaryWithObject:@"Phil" forKey:@"name"]];
 }
 - (void) calledTrigger:(BOOL)success {
     

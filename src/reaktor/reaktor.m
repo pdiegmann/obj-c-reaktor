@@ -107,12 +107,12 @@
         for (NSString *key in [params keyEnumerator]) {
             if ([paramsJSON length] > 2)
                 [paramsJSON appendString:@", "];
-            [paramsJSON appendFormat:@"\"%@\": \"%@\"", key, [params valueForKey:key]];
+            [paramsJSON appendFormat:@"\\\"%@\\\": \\\"%@\\\"", key, [params valueForKey:key]];
         }
-        [paramsJSON appendString:@"}"];
+        [paramsJSON appendString:@" }"];
     }
     
-    NSString *data = [NSString stringWithFormat:@"{ \"token\": \"%@\", \"name\": \"%@\", \"params\": \"%@\", \"save\": \"%@\" }", _token, trigger, paramsJSON, saveMode ? @"true" : @"false"];
+    NSString *data = [NSString stringWithFormat:@"{ \"token\": \"%@\", \"name\": \"%@\", \"data\": \"%@\", \"save\": \"%@\" }", _token, trigger, paramsJSON, saveMode ? @"true" : @"false"];
     
     reaktorRequest *request = [[reaktorRequest alloc] initWithUrl:url andData:data andMethodType:@"POST" andDelegate:self andMethod:@selector(triggerRequestResult:) andQueue:[self getQueue]];
     [request start];
@@ -126,9 +126,15 @@
                           JSONObjectWithData:data
                           options:kNilOptions
                           error:&error];
+    NSString *reason = @"";
     
     if (!error) {
         success = (BOOL)[json objectForKey:@"ok"];
+    }
+    
+    if (!success) {
+        reason = (NSString*)[json objectForKey:@"reason"];
+        NSLog(@"reason: " + reason);
     }
     
     if ([_delegate respondsToSelector:@selector(calledTrigger:)]) {
