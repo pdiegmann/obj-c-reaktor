@@ -13,24 +13,24 @@ Usage
 =========
 Import the reaktor-header in your header-file: 
 
-   #import <reaktor/reaktor.h>
+	#import <reaktor/reaktor.h>
 
 Add reaktorDelegate to your class' delegate-protocolls: 
 
-   @interface myClass : NSObject <reaktorDelegate>
+	@interface myClass : NSObject <reaktorDelegate>
 
 Implement the callbacks:
 
-   - (void) loggedIn:(BOOL)success withResult:(NSDictionary *)json;
-   - (void) calledTrigger:(BOOL)success withResult:(NSDictionary *)json;
+	- (void) loggedIn:(BOOL)success withResult:(NSDictionary *)json;
+	- (void) calledTrigger:(BOOL)success withResult:(NSDictionary *)json;
 
 Create your reaktor: 
 
-   reaktor r = [[reaktor alloc] initWithDelegate:self andMail:@"me@host.com" andPassword:@"password"];
+	reaktor r = [[reaktor alloc] initWithDelegate:self andMail:@"me@host.com" andPassword:@"password"];
 
 Trigger a trigger: 
 
-   [r trigger:@"myTrigger" withParams:[NSDictionary dictionaryWithObject:@"My Name" forKey:@"name"]];
+	[r trigger:@"myTrigger" withParams:[NSDictionary dictionaryWithObject:@"My Name" forKey:@"name"]];
 
 ATTENTION: You can only trigger a trigger AFTER you were logged in successfully. We recommend to take care of your status with a local variable.
 
