@@ -13,10 +13,14 @@
 @synthesize delegate = _delegate, baseUrl = _baseUrl;
 
 - (id) initWithDelegate:(id)delegate andMail:(NSString*)mail andPassword:(NSString*)password {
+    return [self initWithDelegate:delegate andMail:mail andPassword:password andLogging:NO];
+}
+- (id) initWithDelegate:(id)delegate andMail:(NSString*)mail andPassword:(NSString*)password andLogging:(BOOL)log {
     self = [super init];
     
     if (self) {
         isLoggedIn = NO;
+        loggingEnabled = log;
         
         _delegate = delegate;
         
@@ -48,8 +52,8 @@
         [self loginWithMail:_mail andPassword:_password];
     }
     else {
-        if ([_delegate respondsToSelector:@selector(loggedIn:)]) {
-            [_delegate loggedIn:NO]; //performSelector:@selector(loggedIn:) withObject:NO];
+        if ([_delegate respondsToSelector:@selector(loggedIn::)]) {
+            [_delegate loggedIn:NO withResult:[[NSDictionary alloc] init]];
         }
     }
 }
@@ -57,12 +61,21 @@
 - (void) loginWithMail:(NSString*)mail andPassword:(NSString*)password {
     NSString *url = [NSString stringWithFormat:@"%@/login", _baseUrl];
     NSString *jsonData = [NSString stringWithFormat:@"{ \"mail\": \"%@\", \"pass\": \"%@\" }", mail, password];
+    
+    if (loggingEnabled) {
+        NSLog(@"loggin in at: %@ with: %@", url, jsonData);
+    }
+    
     reaktorRequest *request = [[reaktorRequest alloc] initWithUrl:url andData:jsonData andMethodType:@"POST" andDelegate:self andMethod:@selector(loginRequestResult:) andQueue:[self getQueue]];
     [request start];
 }
 
 - (void) loginRequestResult:(NSData*)data {
     BOOL success = NO;
+    
+    if (loggingEnabled) {
+        NSLog(@"login result: %@", [NSString stringWithUTF8String:[data bytes]]);
+    }
     
     NSError* error;
     NSDictionary* json = [NSJSONSerialization
@@ -77,8 +90,8 @@
     
     isLoggedIn = success;
     
-    if ([_delegate respondsToSelector:@selector(loggedIn:)]) {
-        [_delegate loggedIn:success];
+    if ([_delegate respondsToSelector:@selector(loggedIn::)]) {
+        [_delegate loggedIn:success withResult:json];
     }
 }
 
@@ -87,8 +100,8 @@
         [self trigger:trigger inSaveMode:NO];
     }
     else {
-        if ([_delegate respondsToSelector:@selector(calledTrigger:)]) {
-            [_delegate calledTrigger:NO];
+        if ([_delegate respondsToSelector:@selector(calledTrigger::)]) {
+            [_delegate calledTrigger:NO withResult:[[NSDictionary alloc] init]];
         }
     }
 }
@@ -114,6 +127,10 @@
     
     NSString *data = [NSString stringWithFormat:@"{ \"token\": \"%@\", \"name\": \"%@\", \"data\": \"%@\", \"save\": \"%@\" }", _token, trigger, paramsJSON, saveMode ? @"true" : @"false"];
     
+    if (loggingEnabled) {
+        NSLog(@"triggering at: %@ with: %@", url, data);
+    }
+    
     reaktorRequest *request = [[reaktorRequest alloc] initWithUrl:url andData:data andMethodType:@"POST" andDelegate:self andMethod:@selector(triggerRequestResult:) andQueue:[self getQueue]];
     [request start];
 }
@@ -121,11 +138,16 @@
 - (void) triggerRequestResult:(NSData*)data {
     BOOL success = NO;
     
+    if (loggingEnabled) {
+        NSLog(@"trigger result: %@", [NSString stringWithUTF8String:[data bytes]]);
+    }
+    
     NSError* error;
     NSDictionary* json = [NSJSONSerialization
                           JSONObjectWithData:data
                           options:kNilOptions
                           error:&error];
+    
     NSString *reason = @"";
     
     if (!error) {
@@ -134,11 +156,11 @@
     
     if (!success) {
         reason = (NSString*)[json objectForKey:@"reason"];
-        NSLog(@"reason: " + reason);
+        NSLog(@"reason: %@", reason);
     }
     
-    if ([_delegate respondsToSelector:@selector(calledTrigger:)]) {
-        [_delegate calledTrigger:success];
+    if ([_delegate respondsToSelector:@selector(calledTrigger::)]) {
+        [_delegate calledTrigger:success withResult:json];
     }
 }
 

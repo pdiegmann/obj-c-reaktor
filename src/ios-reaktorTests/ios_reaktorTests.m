@@ -31,11 +31,11 @@
     NSLog(@"end");
 }
 
-- (void) loggedIn:(BOOL)success {
+- (void) loggedIn:(BOOL)success withResult:(NSDictionary *)json {
     if (success)
         [r trigger:@"Test" withParams:[NSDictionary dictionaryWithObject:@"Phil" forKey:@"name"]];
 }
-- (void) calledTrigger:(BOOL)success {
+- (void) calledTrigger:(BOOL)success withResult:(NSDictionary *)json {
     
 }
 
