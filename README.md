@@ -6,11 +6,11 @@ Objective-C client (iOS and Mac OS X) for reaktor.io.
 Builds a universal framework.
 
 Installation
-=========
+======
 Just drag'n'drop the 'folder' bin/Release-universal/reaktor.framework into your xCode-project. This project can be targeted for iOS (iPhone and / or iPad; tested minimum SDK-Version 6.0) or Mac OS X (tested on 10.8).
 
 Usage
-=========
+======
 Import the reaktor-header in your header-file: 
 
 	#import <reaktor/reaktor.h>
