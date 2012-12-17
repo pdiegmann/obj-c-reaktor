@@ -1,7 +1,7 @@
 obj-c-reaktor
 ==========
 
-Objective-C client (iOS and Mac OS X) for reaktor.io.
+Objective-C client (iOS and Mac OS X) for http://reaktor.io
 
 Builds a universal framework.
 
