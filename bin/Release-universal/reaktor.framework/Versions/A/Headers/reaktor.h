@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "reaktorRequest.h"
+#import "NSString+MD5.h"
 
 /* test@test.de / test / Test */
 

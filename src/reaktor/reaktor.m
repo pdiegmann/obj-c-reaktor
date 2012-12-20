@@ -60,7 +60,7 @@
 
 - (void) loginWithMail:(NSString*)mail andPassword:(NSString*)password {
     NSString *url = [NSString stringWithFormat:@"%@/login", _baseUrl];
-    NSString *jsonData = [NSString stringWithFormat:@"{ \"mail\": \"%@\", \"pass\": \"%@\" }", mail, password];
+    NSString *jsonData = [NSString stringWithFormat:@"{ \"mail\": \"%@\", \"pass\": \"%@\" }", mail, [password MD5String]];
     
     if (loggingEnabled) {
         NSLog(@"loggin in at: %@ with: %@", url, jsonData);

@@ -24,6 +24,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4A4228D416833B96007E6CEC /* NSString+MD5.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4A4228D216833B96007E6CEC /* NSString+MD5.h */; };
+		4A4228D516833B96007E6CEC /* NSString+MD5.m in Copy Headers */ = {isa = PBXBuildFile; fileRef = 4A4228D316833B96007E6CEC /* NSString+MD5.m */; };
 		4A48A11C165565480076CB19 /* reaktorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A48A11B165565480076CB19 /* reaktorRequest.m */; };
 		4A48A11D165565560076CB19 /* reaktorRequest.h in Sources */ = {isa = PBXBuildFile; fileRef = 4A48A11A165565480076CB19 /* reaktorRequest.h */; };
 		4A48A11E165565560076CB19 /* reaktorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A48A11B165565480076CB19 /* reaktorRequest.m */; };
@@ -81,6 +83,8 @@
 			files = (
 				4A53320916562D7B00A15FCD /* reaktorRequest.h in Copy Headers */,
 				4A5331F91656294700A15FCD /* reaktor.h in Copy Headers */,
+				4A4228D416833B96007E6CEC /* NSString+MD5.h in Copy Headers */,
+				4A4228D516833B96007E6CEC /* NSString+MD5.m in Copy Headers */,
 			);
 			name = "Copy Headers";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +97,8 @@
 		4A0FDF4D16559B6D00AB1B74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A0FDF4F16559B6D00AB1B74 /* ios_reaktor_simulatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_reaktor_simulatorTests.h; sourceTree = "<group>"; };
 		4A0FDF5016559B6D00AB1B74 /* ios_reaktor_simulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_reaktor_simulatorTests.m; sourceTree = "<group>"; };
+		4A4228D216833B96007E6CEC /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		4A4228D316833B96007E6CEC /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		4A48A11A165565480076CB19 /* reaktorRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reaktorRequest.h; sourceTree = "<group>"; };
 		4A48A11B165565480076CB19 /* reaktorRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reaktorRequest.m; sourceTree = "<group>"; };
 		4AEC71B0165540A30062CA73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -269,6 +275,8 @@
 				4AEC71B5165540A30062CA73 /* reaktor.h */,
 				4AEC71B7165540A30062CA73 /* reaktor.m */,
 				4AEC71B3165540A30062CA73 /* Supporting Files */,
+				4A4228D216833B96007E6CEC /* NSString+MD5.h */,
+				4A4228D316833B96007E6CEC /* NSString+MD5.m */,
 			);
 			path = reaktor;
 			sourceTree = "<group>";
