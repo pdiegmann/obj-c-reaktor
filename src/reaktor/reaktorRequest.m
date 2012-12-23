@@ -23,7 +23,7 @@
         [_request setHTTPMethod:methodType];
         [_request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
         [_request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-        [_request setValue:[NSString stringWithFormat:@"%d", [requestData length]] forHTTPHeaderField:@"Content-Length"];
+        [_request setValue:[NSString stringWithFormat:@"%i", [requestData length]] forHTTPHeaderField:@"Content-Length"];
         [_request setHTTPBody:[requestData dataUsingEncoding:NSUTF8StringEncoding]];
 
     }

@@ -125,7 +125,7 @@
         [paramsJSON appendString:@" }"];
     }
     
-    NSString *data = [NSString stringWithFormat:@"{ \"token\": \"%@\", \"name\": \"%@\", \"data\": \"%@\", \"save\": \"%@\" }", _token, trigger, paramsJSON, saveMode ? @"true" : @"false"];
+    NSString *data = [NSString stringWithFormat:@"{ \"token\": \"%@\", \"client\": \"obj-c\", \"name\": \"%@\", \"data\": \"%@\", \"save\": \"%@\" }", _token, trigger, paramsJSON, saveMode ? @"true" : @"false"];
     
     if (loggingEnabled) {
         NSLog(@"triggering at: %@ with: %@", url, data);
